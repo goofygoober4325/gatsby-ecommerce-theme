@@ -20,7 +20,7 @@ import { toOptimizedImage } from '../helpers/general';
 
 import TestError from '../components/TestError';
 
-const HomePage = () => {
+const IndexPage= () => {
   return (
     <div>
       <h1>Welcome to my Next.js site</h1>
