@@ -17,6 +17,18 @@ import * as styles from './index.module.css';
 import { Link, navigate } from 'gatsby';
 import { toOptimizedImage } from '../helpers/general';
 
+import React from 'react';
+import TestError from '../components/TestError';
+
+const HomePage = () => {
+  return (
+    <div>
+      <h1>Welcome to my Next.js site</h1>
+      <TestError />
+    </div>
+  );
+};
+
 const IndexPage = () => {
   const newArrivals = generateMockProductData(3, 'shirt');
   const blogData = generateMockBlogData(3);
