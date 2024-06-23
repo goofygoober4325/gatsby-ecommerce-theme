@@ -17,17 +17,7 @@ import * as styles from './index.module.css';
 import { Link, navigate } from 'gatsby';
 import { toOptimizedImage } from '../helpers/general';
 
-
 import TestError from '../components/TestError';
-
-const IndexPage= () => {
-  return (
-    <div>
-      <h1>Welcome to my Next.js site</h1>
-      <TestError />
-    </div>
-  );
-};
 
 const IndexPage = () => {
   const newArrivals = generateMockProductData(3, 'shirt');
@@ -39,6 +29,10 @@ const IndexPage = () => {
 
   return (
     <Layout disablePaddingBottom>
+      <div>
+        <h1>Welcome to my Next.js site</h1>
+        <TestError />
+      </div>
       {/* Hero Container */}
       <Hero
         maxWidth={'500px'}
