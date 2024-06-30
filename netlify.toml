@@ -10,3 +10,9 @@
   to = "/.netlify/images?url=/:splat&fm=webp"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/detect-vpn"
+  status = 200
+  force = true
