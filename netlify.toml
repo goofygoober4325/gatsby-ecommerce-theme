@@ -1,6 +1,6 @@
 [build]
   command = "gatsby build"
-  functions = "netlify/functions"
+  functions = "functions"
   publish = "public"
 
 ## Rewrite image URLs marked with imgcdn=true to use Netlify Image CDN
@@ -11,8 +11,4 @@
   status = 200
   force = true
 
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/detect-vpn"
-  status = 200
-  force = true
+
